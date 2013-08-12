@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link href="styles/flow-structure.css" rel="stylesheet" media="screen">
+        
+        <script type='text/javascript' src="scripts/jquery-1.9.0-min.js"></script>
+        <script type='text/javascript' src="scripts/jquery-ui-1.9.2-min.js"></script>
+        <script type='text/javascript' src="scripts/jquery.jsPlumb-1.4.1-all-min.js"></script>
+        <script type='text/javascript' src="scripts/flow-structure.js"></script>
+    </head>
+    <body>
+        <div class="chart-container">
+            <div id="global-auth" class="global-auth node">Global Auth</div>
+            <div id="data-sources" class="data-sources sub-container">
+                <span class="label">Data Sources</span>
+                <div id="zendesk" class="zendesk node">Zendesk API</div>
+                <div id="lefty" class="lefty node">Lefty/Cloud Control API</div>
+                <div id="core-tickets" class="core-tickets sub-container">
+                    <span class="label">CORE Tickets</span>
+                    <div id="core-db" class="core-db node">CORE DB</div>
+                    <div id="core-api" class="core-api node">CORE Ticket API</div>
+                    <div id="ticket-search" class="ticket-search node">Ticket Search API</div>
+                </div>
+            </div>
+            <div id="ticket-queues" class="ticket-queues sub-container">
+                <span class="label">Ticket Queues</span>
+                <div id="tq-api" class="tq-api node">TQ API</div>
+                <div id="tq-ui" class="tq-ui node">TQ UI</div>
+            </div>
+        </div>
+    </body>
+</html>
